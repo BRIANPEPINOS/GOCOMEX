@@ -6,16 +6,26 @@
   --gc-red: #c51c2f;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-.text-lime { color: var(--gc-lime) !important; }
-.text-white-75 { color: rgba(255, 255, 255, 0.75) !important; }
-.min-vh-80 { min-height: 80vh; }
-.text-justify-custom { text-align: justify; }
+.text-lime {
+  color: var(--gc-lime) !important;
+}
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+.min-vh-80 {
+  min-height: 80vh;
+}
+.text-justify-custom {
+  text-align: justify;
+}
 
 /* ========== Topbar ========== */
 .topbar {
@@ -47,25 +57,12 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.navbar .nav-link { color: rgba(255, 255, 255, 0.82); }
-.navbar .nav-link:hover,
-.navbar .nav-link.active { color: var(--gc-white); }
-
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background: rgba(185, 216, 90, 0.2);
-  color: var(--gc-lime);
-  font-weight: 800;
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.82);
 }
-
-.brand-name {
-  font-weight: 800;
-  letter-spacing: 0.5px;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--gc-white);
 }
 
 .btn-lime {
@@ -82,8 +79,7 @@ body {
 /* ========== Hero ========== */
 .hero {
   position: relative;
-  background:
-    linear-gradient(120deg, rgba(10, 12, 35, 0.82), rgba(10, 12, 35, 0.35)),
+  background: linear-gradient(120deg, rgba(10, 12, 35, 0.82), rgba(10, 12, 35, 0.35)),
     url("assets/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -92,8 +88,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(185, 216, 90, 0.18), transparent 50%),
+  background: radial-gradient(circle at 20% 20%, rgba(185, 216, 90, 0.18), transparent 50%),
     radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.08), transparent 55%);
   pointer-events: none;
 }
@@ -108,7 +103,9 @@ body {
   border-radius: 999px;
 }
 
-.hero-title { line-height: 1.05; }
+.hero-title {
+  line-height: 1.05;
+}
 
 .hero-kpis {
   display: flex;
@@ -121,14 +118,16 @@ body {
   gap: 0.5rem;
   align-items: center;
   color: var(--gc-white);
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 0.6rem 0.8rem;
   border-radius: 14px;
 }
 
 /* ========== Base sections + overlays ========== */
-.section { padding: 80px 0; }
+.section {
+  padding: 80px 0;
+}
 
 .section-dark {
   position: relative;
@@ -143,8 +142,12 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(8, 10, 28, 0.80) 0%, rgba(8, 10, 28, 0.55) 45%, rgba(8, 10, 28, 0.70) 100%),
+  background: linear-gradient(
+      90deg,
+      rgba(8, 10, 28, 0.8) 0%,
+      rgba(8, 10, 28, 0.55) 45%,
+      rgba(8, 10, 28, 0.7) 100%
+    ),
     radial-gradient(circle at 20% 25%, rgba(0, 0, 0, 0.35), transparent 55%),
     radial-gradient(circle at 80% 40%, rgba(0, 0, 0, 0.25), transparent 55%);
   z-index: 0;
@@ -166,12 +169,11 @@ body {
 }
 
 .section-bg {
-  background:
-    radial-gradient(circle at 10% 10%, rgba(185, 216, 90, 0.16), transparent 55%),
+  background: radial-gradient(circle at 10% 10%, rgba(185, 216, 90, 0.16), transparent 55%),
     linear-gradient(180deg, var(--gc-navy-2), var(--gc-navy));
 }
 
-/* ========== Glass card ========== */
+/* ========== Glass cards ========== */
 .glass-card {
   border-radius: 22px;
   background: rgba(52, 60, 145, 0.15);
@@ -180,6 +182,7 @@ body {
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.244);
 }
+
 .products-card {
   border-radius: 22px;
   background: rgba(145, 55, 52, 0.15);
@@ -190,12 +193,22 @@ body {
 }
 
 /* ========== Fondos por sección ========== */
-.about-hero { background-image: url("assets/gocomex2.jpeg"); }
-.services-hero { background-image: url("assets/gocomex3.jpg"); }
-#compras.section-dark { background-image: url("assets/gocomex5.jpeg"); 
-background-size: cover;}
-#products.section-dark { background-image: url("assets/gocomexproducts.png"); }
-#contacto.section-dark { background-image: url("assets/gocomex7.jpeg"); }
+.about-hero {
+  background-image: url("assets/gocomex2.jpeg");
+}
+.services-hero {
+  background-image: url("assets/gocomex3.jpg");
+}
+#compras.section-dark {
+  background-image: url("assets/gocomex5.jpeg");
+  background-size: cover;
+}
+#products.section-dark {
+  background-image: url("assets/gocomexproducts.png");
+}
+#contacto.section-dark {
+  background-image: url("assets/gocomex7.jpeg");
+}
 
 /* ========== Eyebrow ========== */
 .eyebrow {
@@ -210,7 +223,7 @@ background-size: cover;}
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   padding: 22px;
-  background: rgba(78, 93, 156, 0.10);
+  background: rgba(78, 93, 156, 0.1);
   backdrop-filter: blur(4px);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.09);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
@@ -231,7 +244,9 @@ background-size: cover;}
   margin-bottom: 12px;
   font-size: 1.2rem;
 }
-.service-card h5 { font-weight: 900; }
+.service-card h5 {
+  font-weight: 900;
+}
 
 /* ========== Categorías (Compras Online) ========== */
 .category-card {
@@ -239,7 +254,7 @@ background-size: cover;}
   padding: 14px;
   position: relative;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -266,22 +281,24 @@ background-size: cover;}
   gap: 8px;
   font-weight: 900;
   color: #fff;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
 }
-.pill-cat{
-    display: inline-flex;
+
+.pill-cat {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 900;
   color: #fff;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   padding: 7px 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
 }
+
 .category-badge .dot {
   width: 10px;
   height: 10px;
@@ -340,7 +357,9 @@ background-size: cover;}
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
   flex: 0 0 auto;
 }
-.category-icon i { font-size: 1.2rem; }
+.category-icon i {
+  font-size: 1.2rem;
+}
 
 .category-b::after,
 .category-c::after,
@@ -354,9 +373,15 @@ background-size: cover;}
   opacity: 0.55;
   transform: rotate(18deg);
 }
-.category-b::after { background: radial-gradient(circle, rgba(185, 216, 90, 0.55), transparent 60%); }
-.category-c::after { background: radial-gradient(circle, rgba(80, 140, 255, 0.55), transparent 60%); }
-.category-g::after { background: radial-gradient(circle, rgba(255, 200, 60, 0.55), transparent 60%); }
+.category-b::after {
+  background: radial-gradient(circle, rgba(185, 216, 90, 0.55), transparent 60%);
+}
+.category-c::after {
+  background: radial-gradient(circle, rgba(80, 140, 255, 0.55), transparent 60%);
+}
+.category-g::after {
+  background: radial-gradient(circle, rgba(255, 200, 60, 0.55), transparent 60%);
+}
 
 /* ========== Imagen derecha (compras) ========== */
 .price-card {
@@ -374,19 +399,16 @@ background-size: cover;}
 }
 
 /* ========== Contacto ========== */
-/* ===== Contacto ===== */
 .contact-hero {
-  background-image: url("assets/gocomex5.jpeg"); /* cambia si quieres otra */
+  background-image: url("assets/gocomex5.jpeg");
   background-size: cover;
   background-position: center;
 }
 
-/* card específico para contacto */
 .contact-card {
   border-radius: 22px;
 }
 
-/* filas clicables */
 .contact-row {
   display: flex;
   align-items: center;
@@ -403,7 +425,6 @@ background-size: cover;}
   transform: translateY(-1px);
 }
 
-/* icono en contacto */
 .contact-ico {
   width: 44px;
   height: 44px;
@@ -417,7 +438,6 @@ background-size: cover;}
   flex: 0 0 auto;
 }
 
-/* texto */
 .contact-text .label {
   display: block;
   font-weight: 800;
@@ -430,25 +450,20 @@ background-size: cover;}
   font-size: 0.95rem;
 }
 
-/* flecha derecha */
 .contact-action {
   margin-left: auto;
   color: rgba(255, 255, 255, 0.65);
 }
 
-/* divisor suave */
 .divider {
   height: 1px;
   background: rgba(255, 255, 255, 0.14);
   width: 100%;
 }
+
 /* ========== Footer ========== */
 .footer {
   background: linear-gradient(90deg, var(--gc-navy-2), var(--gc-navy));
-}
-
-@media (max-width: 991px) {
-  .section { padding: 64px 0; }
 }
 
 /* Suaviza el cambio entre secciones con imagen */
@@ -458,8 +473,8 @@ background-size: cover;}
   left: 0;
   right: 0;
   bottom: 0;
-  height: 90px;              /* ajusta: 60–140px */
-  z-index: 1;                /* arriba del fondo, abajo del contenido */
+  height: 90px;
+  z-index: 1;
   pointer-events: none;
   background: linear-gradient(
     to bottom,
@@ -482,7 +497,6 @@ background-size: cover;}
   justify-content: center;
   text-decoration: none;
   z-index: 9999;
-
   background: #25d366;
   color: #fff;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
@@ -502,7 +516,7 @@ background-size: cover;}
 .pdf-float {
   position: fixed;
   right: 18px;
-  bottom: 86px; /* arriba del WhatsApp */
+  bottom: 86px;
   width: 56px;
   height: 56px;
   border-radius: 999px;
@@ -511,7 +525,6 @@ background-size: cover;}
   justify-content: center;
   text-decoration: none;
   z-index: 9998;
-
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -532,7 +545,7 @@ background-size: cover;}
 
 /* ===== Navbar premium ===== */
 .nav-premium {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .brand-logo {
@@ -540,8 +553,8 @@ background-size: cover;}
   height: 42px;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
-  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .brand-name {
@@ -553,11 +566,13 @@ background-size: cover;}
 .brand-subtitle {
   font-size: 0.75rem;
   letter-spacing: 2px;
-  color: rgba(255,255,255,0.70);
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 2px;
 }
 
-.nav-links-gap { gap: 0.25rem; }
+.nav-links-gap {
+  gap: 0.25rem;
+}
 
 .navbar .nav-link {
   position: relative;
@@ -567,7 +582,7 @@ background-size: cover;}
 }
 
 .navbar .nav-link:hover {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   transform: translateY(-1px);
 }
 
@@ -584,8 +599,8 @@ background-size: cover;}
 
 /* ===== Footer premium ===== */
 .footer-premium {
-  background: linear-gradient(180deg, rgba(15,18,54,0.92), rgba(22,26,74,1));
-  border-top: 1px solid rgba(255,255,255,0.10);
+  background: linear-gradient(180deg, rgba(15, 18, 54, 0.92), rgba(22, 26, 74, 1));
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-logo {
@@ -593,8 +608,8 @@ background-size: cover;}
   height: 44px;
   border-radius: 14px;
   object-fit: cover;
-  border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .footer-brand {
@@ -616,7 +631,7 @@ background-size: cover;}
 .footer-links a {
   display: inline-block;
   padding: 6px 0;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
   transition: color 0.15s ease, transform 0.15s ease;
 }
@@ -626,44 +641,46 @@ background-size: cover;}
   transform: translateX(2px);
 }
 
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-contact-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: rgba(255,255,255,0.78);
-  text-decoration: none;
-}
-
-.footer-contact-row i {
-  color: var(--gc-lime);
-}
-
-.footer-contact-row:hover {
-  color: #fff;
-}
-
 .footer-hr {
-  border-color: rgba(255,255,255,0.16);
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 .footer-mini-link {
-  color: rgba(255,255,255,0.78);
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
   font-size: 0.9rem;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .footer-mini-link:hover {
   color: #fff;
-  background: rgba(255,255,255,0.10);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Navbar responsive: solo logo en móvil ===== */
+@media (max-width: 991.98px) {
+  .brand-text {
+    display: none !important;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 64px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-text {
+    display: flex;
+  }
 }
